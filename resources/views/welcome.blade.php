@@ -1,7 +1,5 @@
 @extends('layouts.app', ['title' => 'Home'])
 
 @section('content')
-    <div>
-        Hello world!
-    </div>
+    <h3>Your map here!!!</h3>
 @stop
