@@ -49,8 +49,8 @@
               </a>
             </div>
           </li>
-          <li class="nav-item {{ set_active_route('home') }}">
-            <a class="nav-link js-scroll-trigger" href="./orders.php">
+          <li class="nav-item {{ set_active_route('contact') }}">
+            <a class="nav-link " href="{{ route('contact') }}">
               Contact
             </a>
           </li>
