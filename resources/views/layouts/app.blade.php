@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="/libs/font-awesome/css/font-awesome.min.css">
   <style type="text/css">
   	body{
-  		/*font-family: 'Open-Sans', Helvetica, Arial, sans-serif*/
+  		font-family: 'Open-Sans', Helvetica, Arial, sans-serif
   	}
   	footer{
   		margin: 4em 0;
