@@ -30,7 +30,7 @@ return [
 
     'dont_alias' => [
         'App\Nova',
-        'App\Models\User'
+        'App\User'
     ],
 
 ];

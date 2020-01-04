@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => page_title('About')])
+@extends('layouts.main', ['title' => page_title('About')])
 @section('content')
 	<div class="container mt-4">
 		<h3>What is {{ config('app.name') }}?</h3>

@@ -18,7 +18,7 @@
             </a>
           </li>
           <li class="nav-item {{ set_active_route('') }}">
-            <a class="nav-link js-scroll-trigger" href="./orders.php">
+            <a class="nav-link js-scroll-trigger" href="">
               Artisans
             </a>
           </li>
@@ -56,11 +56,11 @@
           </li>
       </ul>
       <ul class="navbar-nav ml-auto my-2 my-lg-0">
-      	<li class="nav-item">
-            <a class="nav-link" href="">Register</a>
+      	<li class="nav-item {{ set_active_route('register') }}">
+            <a class="nav-link" href="/register">Register</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Login</a>
+        <li class="nav-item set_active_route('login')">
+          <a class="nav-link" href="/login">Login</a>
         </li>
       </ul>
     </div>
