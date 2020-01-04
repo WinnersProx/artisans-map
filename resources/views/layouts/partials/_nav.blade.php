@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light static-top py-1" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-1" id="mainNav">
   <div class="container">
     <a class="navbar-brand font-weight-bold" href="{{ route('home') }}">{{ config('app.name') }}</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +18,7 @@
             </a>
           </li>
           <li class="nav-item {{ set_active_route('') }}">
-            <a class="nav-link js-scroll-trigger" href="./orders.php">
+            <a class="nav-link js-scroll-trigger" href="">
               Artisans
             </a>
           </li>
@@ -49,18 +49,18 @@
               </a>
             </div>
           </li>
-          <li class="nav-item {{ set_active_route('home') }}">
-            <a class="nav-link js-scroll-trigger" href="./orders.php">
+          <li class="nav-item {{ set_active_route('contact') }}">
+            <a class="nav-link " href="{{ route('contact') }}">
               Contact
             </a>
           </li>
       </ul>
       <ul class="navbar-nav ml-auto my-2 my-lg-0">
-      	<li class="nav-item">
-            <a class="nav-link" href="">Register</a>
+      	<li class="nav-item {{ set_active_route('register') }}">
+            <a class="nav-link" href="/register">Register</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Login</a>
+        <li class="nav-item set_active_route('login')">
+          <a class="nav-link" href="/login">Login</a>
         </li>
       </ul>
     </div>

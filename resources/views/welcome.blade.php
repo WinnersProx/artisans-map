@@ -1,5 +1,8 @@
-@extends('layouts.app', ['title' => 'Home'])
+@extends('layouts.main', ['title' => page_title()])
 
 @section('content')
-    <h3>Your map here!!!</h3>
+	<div class="text-center">
+		<h3>Your map goes here!!!</h3>
+	</div>
+    
 @stop
