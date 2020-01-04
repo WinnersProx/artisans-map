@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Foundation\Inspiring;
-
+use Illuminate\Database\Eloquent\Builder;
+use Carbon\Carbon;
+use App\Models\Message;
 /*
 |--------------------------------------------------------------------------
 | Console Routes
@@ -15,4 +17,13 @@ use Illuminate\Foundation\Inspiring;
 
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
-})->describe('Display an inspiring quote');
+})
+->describe('Display an inspiring quote');
+
+Artisan::command('artisansmap:cleandb', function () {
+    $this->info('Cleaning records...');
+
+    Message::today()->delete();
+
+    $this->info('Database cleaned successfully!');
+})->describe('Check whether someone is an artisan');

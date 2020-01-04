@@ -1,9 +1,10 @@
 <?php
 
+use App\Mail\ContactMessageCreated;
 
-Route::get('/', 'PagesController@home')->name('home');
+Route::view('/', 'welcome')->name('home');
 
-Route::get('/about', 'PagesController@about')->name('about');
+Route::view('/about', 'about')->name('about');
 
 Route::get('/contact', 'ContactsController@create')->name('contact');
 

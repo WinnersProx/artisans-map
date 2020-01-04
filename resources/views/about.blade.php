@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'About'])
+@extends('layouts.app', ['title' => page_title('About')])
 @section('content')
 	<div class="container mt-4">
 		<h3>What is {{ config('app.name') }}?</h3>
@@ -10,7 +10,7 @@
 			<div class="col-md-8">
 				<p class="alert alert-warning">
 					<strong>
-						<i class="fa fa-exclamation-triangle"></i>
+						<i class="fa fa-exclamation-circle"></i>
 						This app has been built by 
 						<a href="https://twitter.com/etsmo">@etsmo</a> for learning purpose!
 				</strong>

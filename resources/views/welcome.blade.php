@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'Home'])
+@extends('layouts.app', ['title' => page_title()])
 
 @section('content')
 	<div class="text-center">

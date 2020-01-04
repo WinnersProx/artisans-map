@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light static-top py-1" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-1" id="mainNav">
   <div class="container">
     <a class="navbar-brand font-weight-bold" href="{{ route('home') }}">{{ config('app.name') }}</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
